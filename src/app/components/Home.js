@@ -2,7 +2,9 @@
  * Created by sertac.turkel on 09/07/2017.
  */
 import React from "react";
-
+/**
+ * Child Comp
+ */
 export class Home extends React.Component {
     constructor(props) {
         super();
@@ -10,11 +12,11 @@ export class Home extends React.Component {
             age: props.initialAge,
             status: 0
         };
-        setTimeout(()=>{
+        setTimeout(() => {
             this.setState({
-                status:1
+                status: 1
             })
-        },3000)
+        }, 3000)
     }
 
     onMakeOlder() {
@@ -31,6 +33,8 @@ export class Home extends React.Component {
                 <p>Status {this.state.status} </p>
                 <hr/>
                 <button onClick={this.onMakeOlder.bind(this)} className="btn btn-primary">Make me older!</button>
+                <hr/>
+                <button onClick={this.props.greet} className="btn btn-primary">Greet</button>
             </div>
         );
     }
@@ -38,5 +42,6 @@ export class Home extends React.Component {
 
 Home.propTypes = {
     name: React.PropTypes.string,
-    initialAge: React.PropTypes.number
+    initialAge: React.PropTypes.number,
+    greet: React.PropTypes.func
 }
