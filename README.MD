@@ -1,16 +1,22 @@
- 505  mkdir reactjs-basics
-  506  cd reactjs-basics/
-  507  brew search npm
-  508  brew install npm
-  509  brew info npm
-  510  ls
-  511  npm init
-  512  ls
-  513  ls -al /Users/sertac.turkel/.config
-  514  npm install react react-dom --save
-  515  #prod: npm install react react-dom --save
-  516  npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 babel-core --save-dev
-  517  #dev:npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 babel-core --save-dev
-  518  npm start
-  519  sudo npm start
-  520  history
+mkdir reactjs-basics
+cd reactjs-basics/
+brew search npm
+brew install npm
+brew info npm
+ls
+npm init
+ls
+ls -al /Users/sertac.turkel/.config
+npm install react react-dom --save
+#prod: npm install react react-dom --save
+npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 babel-core --save-dev
+#dev:npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 babel-core --save-dev
+npm start
+
+git init
+ls
+touch .gitignore
+git status -s
+git add .
+git commit -m "setup"
+history
