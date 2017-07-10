@@ -13,6 +13,33 @@ export class Home extends React.Component {
                 status: 1
             });
         },3000);
+        console.log("... Constructor ...")
+    }
+
+    componentWillMount(){
+        console.log("... Component Will mount ...");
+    }
+    componentDidMount(){
+        console.log("... Component Did Mount ...");
+    }
+    componentWillReceiveProps(nextProps){
+        console.log("... Component will recieve props ...",nextProps);
+    }
+
+    shouldComponentUpdate(nextProps,nextState){
+        console.log("... Should Component Update ... ",nextProps,nextState);
+       // if(nextState.status === 1)
+        //    return false;
+        return true;
+    }
+    componentWillUpdate(nextProps,nextState){
+        console.log("... Component will update",nextProps,nextState);
+    }
+    componentDidUpdate(prevProps,prevState){
+        console.log("... Component Did Update ...",prevProps,prevState)
+    }
+    componentWillUnmount(){
+        console.log("... Component will Unmount ...");
     }
 
     onMakeOlder() {
