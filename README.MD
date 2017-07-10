@@ -24,4 +24,5 @@ history
 #####React Router####
 npm install --save react-router
 #########Redux########
-npm install redux
+npm install redux --save
+npm install redux-logger --save
