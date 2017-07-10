@@ -23,3 +23,5 @@ history
 
 #####React Router####
 npm install --save react-router
+#########Redux########
+npm install redux
