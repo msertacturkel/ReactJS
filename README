@@ -28,3 +28,6 @@ npm install redux --save
 npm install redux-logger --save
 
 npm install react-redux --save
+
+########Async Tasks######
+npm install redux-thunk --save
