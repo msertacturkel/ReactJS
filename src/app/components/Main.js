@@ -3,8 +3,7 @@
  */
 import React from "react";
 
-export class Main extends React.Component {
-    render() {
+export const Main = (props) => {
         return (
             <div>
                 <div className="row">
@@ -14,12 +13,11 @@ export class Main extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-12">
-                        <button className="btn btn-primary" onClick={() => this.props.changeUsername('Anna')}>
+                        <button className="btn btn-primary" onClick={() => props.changeUsername('Anna')}>
                             Change the username
                         </button>
                     </div>
                 </div>
             </div>
         );
-    }
-}
+};
