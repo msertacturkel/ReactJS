@@ -6,6 +6,8 @@ import logger from "redux-logger";
 import math from "./reducers/mathReducer";
 import user from "./reducers/userReducer";
 import thunk from "redux-thunk";
+import promise from "redux-promise-middleware";
+
 
 export default createStore(
     combineReducers({
@@ -13,4 +15,4 @@ export default createStore(
         user
     }),
     {},
-    applyMiddleware(logger,thunk));
+    applyMiddleware(logger,thunk,promise()));

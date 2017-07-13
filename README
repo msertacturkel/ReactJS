@@ -30,4 +30,8 @@ npm install redux-logger --save
 npm install react-redux --save
 
 ########Async Tasks######
+THUNK:
 npm install redux-thunk --save
+PROMISE:
+npm install redux-promise-middleware --save
+
